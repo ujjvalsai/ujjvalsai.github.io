@@ -25,7 +25,7 @@ body {
   position: relative;
   z-index: 1;
   padding: 80px 20px; /* Adjust padding as needed */
-  color: white; /* Set text color for better visibility */
+  color: rgb(249, 19, 19); /* Set text color for better visibility */
 }
 
 html {
