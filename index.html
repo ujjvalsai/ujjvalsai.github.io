@@ -40,7 +40,7 @@
       </nav>
   </header>
   <video autoplay muted loop id="video-bg">
-    <source src="assets/network.mp4" type="video/mp4">
+    <source src="./assets/network.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
 <div id="content-container">
@@ -57,10 +57,19 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="openPdf()"
           >
             Download CV
           </button>
+          <script>
+            function openPdf() {
+              // Replace 'path/to/your/file.pdf' with the actual path to your PDF file
+              var pdfUrl = 'assets/Resume.pdf';
+            
+              // Open the PDF in a new window
+              window.open(pdfUrl, '_blank');
+            }
+            </script>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
           </button>
